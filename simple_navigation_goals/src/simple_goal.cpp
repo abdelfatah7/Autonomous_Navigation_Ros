@@ -20,9 +20,9 @@ int main(int argc, char** argv){
   //first goal
   goal.target_pose.header.frame_id = "map";
   goal.target_pose.header.stamp = ros::Time::now();
-  goal.target_pose.pose.position.x = -6.45;
-  goal.target_pose.pose.position.y = -4.57;
-  goal.target_pose.pose.orientation.w = 1.0;
+  goal.target_pose.pose.position.x = 6.34;
+  goal.target_pose.pose.position.y = 1.91;
+  goal.target_pose.pose.orientation.w = 1.6;
 
   ROS_INFO("Sending goal 1");
   ac.sendGoal(goal);
@@ -38,8 +38,8 @@ int main(int argc, char** argv){
   ros::Duration(0.5).sleep();
 
   //second goal
-  goal.target_pose.pose.position.x = 7.42;
-  goal.target_pose.pose.position.y = -9.79;
+  goal.target_pose.pose.position.x = 8.06;
+  goal.target_pose.pose.position.y = -8.36;
 
   ROS_INFO("Sending goal 2");
   ac.sendGoal(goal);
@@ -56,8 +56,8 @@ int main(int argc, char** argv){
 
 
   //third goal
-  goal.target_pose.pose.position.x = 10.7;
-  goal.target_pose.pose.position.y = 3.85;
+  goal.target_pose.pose.position.x = 2.3;
+  goal.target_pose.pose.position.y = -8.38;
 
   ROS_INFO("Sending goal 3");
   ac.sendGoal(goal);
@@ -73,8 +73,8 @@ int main(int argc, char** argv){
     ros::Duration(1).sleep();
 
     //fourth goal
-  goal.target_pose.pose.position.x = 4.41;
-  goal.target_pose.pose.position.y = 0.506;
+  goal.target_pose.pose.position.x = -2.52;
+  goal.target_pose.pose.position.y = 0.115;
 
   ROS_INFO("Sending goal 4");
   ac.sendGoal(goal);
@@ -91,8 +91,8 @@ int main(int argc, char** argv){
 
 
 //fifth goal
-  goal.target_pose.pose.position.x = 0.981;
-  goal.target_pose.pose.position.y = -9.52;
+  goal.target_pose.pose.position.x = -7.31;
+  goal.target_pose.pose.position.y = 4.87;
 
   ROS_INFO("Sending goal 5");
   ac.sendGoal(goal);
@@ -109,8 +109,8 @@ int main(int argc, char** argv){
 
 
 //six goal
-  goal.target_pose.pose.position.x = -3.2;
-  goal.target_pose.pose.position.y = -0.487;
+  goal.target_pose.pose.position.x = -0.547;
+  goal.target_pose.pose.position.y = 2.5;
 
   ROS_INFO("Sending goal 6");
   ac.sendGoal(goal);
